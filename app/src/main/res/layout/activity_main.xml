@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="376dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="Android Party"
+        android:scaleType="fitCenter"
+        android:src="@drawable/androidparty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454"
+        app:layout_constraintVertical_weight="1"
+        app:srcCompat="@drawable/androidparty" />
+
+    <TextView
+        android:id="@+id/From_Me_text_view"
+
+        android:layout_width="0dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_purple"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="From, Me"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo_image_view" />
+
+    <TextView
+        android:id="@+id/happy_text_view"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@android:color/holo_purple"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:padding="16dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:text="Happy Birthday to you, Happy Birthday to you, Happy Birthday to you!"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:autoSizeMinTextSize="@android:dimen/app_icon_size"
+        app:fontFamily="cursive"
+        app:layout_constraintBottom_toBottomOf="@+id/photo_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
